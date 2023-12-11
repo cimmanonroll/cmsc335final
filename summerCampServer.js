@@ -16,7 +16,7 @@ if (process.argv.length != 3) {
     process.stdout.write("Usage summerCampServer.js portNumber\n");
     process.exit(1);
 }
-const portNumber = process.argv[2];
+const portNumber = 10000;
 const databaseAndCollection = {db: "CMSC335_DB", collection:"campApplicants"};
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
